@@ -1,0 +1,3 @@
+# Project exclude paths
+/Order-serv/target/
+/Product-serv/target/
