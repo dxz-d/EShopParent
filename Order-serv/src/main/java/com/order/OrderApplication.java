@@ -11,8 +11,8 @@ public class OrderApplication {
         SpringApplication.run(OrderApplication.class);
     }
 
-//    @Bean
-//    public RestTemplate create() {
-//        return new RestTemplate();
-//    }
+    @Bean
+    public RestTemplate create() {
+        return new RestTemplate();
+    }
 }
