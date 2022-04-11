@@ -11,6 +11,9 @@
     <modules>
         <module>Order-serv</module>
         <module>Product-serv</module>
+        <module>User-serv</module>
+        <module>Stock-serv</module>
+        <module>ShopCart-serv</module>
     </modules>
 
     <parent>
