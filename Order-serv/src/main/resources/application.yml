@@ -1,2 +1,11 @@
 server:
-  port: 8888
+  port: 8000
+#  port: 8001
+#  port: 8002
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        service: order-serv
+      server-addr: localhost:8848

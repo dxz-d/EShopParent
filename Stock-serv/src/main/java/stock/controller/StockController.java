@@ -14,6 +14,7 @@ public class StockController {
 
     @GetMapping("/stock/reduce/{productId}")
     public String reduct(@PathVariable("productId") Integer productId) {
-        return "减少一个库存";
+        System.out.println("减库存1个成功");
+        return "减库存1个成功";
     }
 }
