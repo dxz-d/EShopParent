@@ -1,0 +1,22 @@
+server:
+  port: 8888
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    mode: HTML
+  cloud:
+    nacos:
+      discovery:
+        service: stock-serv
+      server-addr: localhost:8848
+user:
+  file:
+    name: springboot.jpg
+    path: /Users/dxz/Desktop/
+
+

@@ -15,6 +15,7 @@
         <module>Stock-serv</module>
         <module>ShopCart-serv</module>
         <module>Configdemo</module>
+        <module>File-serv</module>
     </modules>
 
     <parent>
