@@ -1,3 +1,5 @@
+server:
+  port: 8089
 spring:
   application:
     name: configdemo
@@ -5,4 +7,7 @@ spring:
     nacos:
       config:
         server-addr: localhost:8848
-        file-extension: y
+        file-extension: yaml
+  profiles:
+    active: prod # 表示向配置中心索要的环境配置
+  # 索要配置的格式：${application.name}-${spring.profiles.active}.${file-extension}
