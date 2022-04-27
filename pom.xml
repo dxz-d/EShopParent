@@ -16,6 +16,7 @@
         <module>ShopCart-serv</module>
         <module>Configdemo</module>
         <module>File-serv</module>
+        <module>MyBatis-Plus</module>
     </modules>
 
     <parent>

@@ -12,14 +12,37 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 
-//    @Value("${test}")
-//    private String testStr;
 
     @Value("${testconfig}")
     private String testconfig;
+
+    @Value("${testcommon}")
+    private String testcommon;
 
     @GetMapping("/test")
     public String test() {
         return testconfig;
     }
+
+    @GetMapping("/testcommon")
+    public String testcommon(){
+        return testcommon;
+    }
+
+    @Value("${redisip}")
+    private String redisip;
+
+    @GetMapping("/redisip")
+    public String getRedisip(){
+        return redisip;
+    }
+
+    @Value("${mqip}")
+    private String mqip;
+
+    @GetMapping("/mqip")
+    public String mqip(){
+        return mqip;
+    }
+
 }

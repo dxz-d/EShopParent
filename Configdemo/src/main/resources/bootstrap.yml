@@ -8,6 +8,12 @@ spring:
       config:
         server-addr: localhost:8848
         file-extension: yaml
+        extension-configs[0]:
+          data_id: redis.yaml
+          refresh: true
+        extension-configs[1]:
+          data_id: mq.yaml
+          refresh: true
   profiles:
-    active: prod # 表示向配置中心索要的环境配置
+    active: test # 表示向配置中心索要的环境配置
   # 索要配置的格式：${application.name}-${spring.profiles.active}.${file-extension}
